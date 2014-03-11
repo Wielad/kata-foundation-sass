@@ -1,0 +1,203 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foundation project</title>
+        <!-- build:css css/libraries.min.css -->
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,500&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/library.css">
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css css/app.min.css -->
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/app_override.css">
+        <!-- endbuild -->
+        <!-- build:js js/vendor/modernizr.min.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+    <div class="contain-to-grid" id="topBar">
+        <nav class="top-bar" data-topbar="">
+            <ul class="title-area">
+                <li class="name"><img src="images/logo.png" id="topBarLogo"></li>
+                <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+            </ul>
+
+            <section class="top-bar-section" id="topBarMenu">
+                <ul class="left">
+                    <li class="active"><a href="#"><span class="menu-item-circle">1</span>Adres dostawy</a></li>
+                    <li><a href="#"><span class="menu-item-circle">2</span>Potwierdzenie</a></li>
+                    <li><a href="#"><span class="menu-item-circle">3</span>Płatność</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+
+
+    <div class="row">
+        <div class="large-12 columns">
+            <h1 id="pageHeader">Alicja, witaj</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-9 columns">
+            <section class="row">
+                <div class="large-12 columns">
+                    <h1><span class="header-icon"></span>Na jaki adres wysłać zamówienie? <small style="margin-left: 10px">wymagane</small></h1>
+
+                    <div>
+                        <div class="input-control">
+                            <input type="radio" name="address" id="currentAddress" style="margin-top: 5px">
+                        </div>
+                        <div class="input-label">
+                            <label for="currentAddress">
+                                Alicja Maczkowska
+                                <br>
+                                Nazwa ulicy 3/6
+                                <br>
+                                00-123 Białystok
+                            </label>
+                            <div>
+                                <div class="button-info">Edytuj adres <span class="fa fa-arrow-right color-alert" style="margin-left: 5px;"></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="input-control">
+                            <input type="radio" name="address" id="otherAddress" style="margin-top: 5px">
+                        </div>
+                        <div class="input-label">
+                            <label for="otherAddress">
+                                Inny adres do wysyłki
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="large-12 columns">
+                    <div class="input-control">
+                        <input type="checkbox" name="address" id="invoice" style="margin-top: 10px">
+                    </div>
+                    <div class="input-label">
+                        <label for="invoice">
+                            <h3 class="no-margin">Chcę otrzymać fakturę VAT <small style="margin-left: 10px">opcjonalnie</small></h3>
+                            <span class="caption">Jeśli nie potrzebujesz faktury otrzymasz oparagon, jako potwierdzenie zakupów.</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="large-12 columns">
+                    <h3><span class="header-icon"></span>Dane kontaktowe - sprawdź czy są aktualne <small style="margin-left: 10px">wymagane</small></h3>
+                </div>
+            </section>
+
+            <div class="row">
+                <div class="medium-3 columns">
+                    <label for="phone">
+                        <span class="caption">Numer telefonu</span>
+                    </label>
+                </div>
+                <div class="medium-4 columns end">
+                    <input type="text" id="phone">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="medium-3 columns">
+                    <label for="email">
+                        <span class="caption">Adres e-mail</span>
+                    </label>
+                </div>
+                <div class="medium-4 columns end">
+                    <input type="email" id="email">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="medium-3 columns">
+                    <label for="preferences">
+                        <span class="caption">Preferencje</span>
+                    </label>
+                </div>
+                <div class="medium-4 columns end">
+                    <select id="preferences">
+                        <option value="default">wybierz</option>
+                    </select>
+                </div>
+            </div>
+
+            <section class="row no-padding">
+                <div class="large-12 columns text-right no-padding">
+                    <div class="button alert">Przejdź do potwierdzenia<span class="fa fa-arrow-right" style="margin-left: 15px;"></span></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="large-3 columns">
+            <section class="row no-padding no-margin">
+                <div class="medium-12 columns no-padding">
+                    <div class="panel">
+                        <div style="padding: 15px;">
+                            <div style="float: left; width: 40px; text-align: left">
+                                <img src="images/tablet.png">
+                            </div>
+                            <div style="margin-left: 40px;">
+                                <h2 class="color-alert">800 123 45</h2>
+                                <small>w godz  8-20 w dni robocze (połączenie bezpłatne)</small>
+                            </div>
+                        </div>
+                        <div style="padding: 15px;">
+                            <div style="float: left; width: 40px; text-align: left">
+                                <img src="images/envelope.png">
+                            </div>
+                            <div style="margin-left: 40px;">
+                                <h2 class="color-alert">info@supersam.net</h2>
+                                <small>odpowiemy w ciągu 24h</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row no-margin">
+                <div class="large-12 columns">
+                    <h3><span class="header-icon"></span>Pomoc</h3>
+
+                    <ul class="no-bullet" id="sidebarMenu">
+                        <li><a href="#">Czas realizacji</a></li>
+                        <li><a href="#">Koszty dostawy</a></li>
+                        <li><a href="#">Metody płatności</a></li>
+                        <li><a href="#">Reklamacje i zwroty</a></li>
+                        <li><a href="#">Pytania i odpowiedzi</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+        <!-- build:js js/vendor/libraries.min.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="bower_components/foundation/js/foundation.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js js/app.min.js -->
+        <script src="js/app.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

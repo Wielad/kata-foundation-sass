@@ -1,0 +1,146 @@
+#topBarLogo {
+    margin: 20px 10px;
+}
+
+#topBarMenu {
+    font-family: 'Dosis', sans-serif;
+}
+
+#topBar,
+.top-bar-section li:not(.has-form) a:not(.button),
+.top-bar ul li:not(.toggle-topbar) a,
+.top-bar ul li:not(.toggle-topbar),
+.top-bar {
+    background: #66686b; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2Njg2YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMjM2MzkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #66686B 0%, #323639 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#66686B), color-stop(100%,#323639)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #66686B 0%,#323639 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #66686B 0%,#323639 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #66686B 0%,#323639 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #66686B 0%,#323639 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66686b', endColorstr='#323639',GradientType=0 ); /* IE6  */
+}
+
+.top-bar li .menu-item-circle {
+    display: inline-block;
+    background-color: #c6cdd1;
+    width: 24px;
+    height: 24px;
+    line-height: 22px;
+    border-radius: 12px;
+    color: #191e23;
+    margin-right: 12px;
+    text-align: center;
+}
+
+.top-bar li.active .menu-item-circle {
+    background-color: #eceff1;
+}
+
+.input-control {
+    width: 40px;
+    float: left;
+}
+
+.input-label {
+    margin-left: 40px;
+}
+
+section.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #d1d7da;
+}
+
+#pageHeader {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+label small {
+    text-transform: none;
+}
+
+.header-icon {
+    display: inline-block;
+    position: absolute;
+    left: -15px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: #e11b22;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+}
+
+h1 .header-icon {
+    height: 1.925rem;
+}
+
+h3 .header-icon {
+    height: 1.75rem;
+}
+
+.button-info {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #56697b;
+    padding: 8px 0;
+}
+
+.button-info:hover {
+    background-color: #fff;
+}
+
+.button {
+    padding: 15px 20px;
+}
+
+.caption {
+    color: #56697b;
+    font-size: 13px;
+}
+
+select, input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    height: inherit;
+}
+
+select, input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.color-alert {
+    color: #e11b22 !important;
+}
+
+#sidebarMenu {
+    font-size: 13px;
+}
+
+#sidebarMenu a {
+    color: #000;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+#sidebarMenu a:hover {
+    color: #e11b22;
+    text-decoration: none;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
