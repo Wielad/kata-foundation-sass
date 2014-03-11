@@ -1,2 +1,2 @@
-kata-foundation-sass
-====================
+# Kata: Foundation & Sass
+
