@@ -38,12 +38,11 @@
         </nav>
     </div>
 
-
-    <div class="row">
+    <header class="row">
         <div class="large-12 columns">
             <h1 id="pageHeader">Alicja, witaj</h1>
         </div>
-    </div>
+    </header>
     <div class="row">
         <div class="large-9 columns">
             <section class="row">
@@ -52,7 +51,7 @@
 
                     <div>
                         <div class="input-control">
-                            <input type="radio" name="address" id="currentAddress" style="margin-top: 5px">
+                            <input type="radio" name="address" id="currentAddress" style="margin-top: 5px" checked>
                         </div>
                         <div class="input-label">
                             <label for="currentAddress">
@@ -101,46 +100,52 @@
                 </div>
             </section>
 
-            <div class="row">
-                <div class="medium-3 columns">
-                    <label for="phone">
-                        <span class="caption">Numer telefonu</span>
-                    </label>
+            <form id="contactForm" data-abide>
+                <div class="row">
+                    <div class="medium-3 columns">
+                        <label for="phone">
+                            <span class="caption">Numer telefonu</span>
+                        </label>
+                    </div>
+                    <div class="medium-4 columns end">
+                        <input type="text" id="phone" required pattern="[0-9- |wew]+">
+                        <small class="error">Wpisz nr telefonu - komórkowy lub stacjonarny np. 501 123 456,  22 123 456 789,  22 123 456 789 wew 22</small>
+                    </div>
                 </div>
-                <div class="medium-4 columns end">
-                    <input type="text" id="phone">
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="medium-3 columns">
-                    <label for="email">
-                        <span class="caption">Adres e-mail</span>
-                    </label>
+                <div class="row">
+                    <div class="medium-3 columns">
+                        <label for="email">
+                            <span class="caption">Adres e-mail</span>
+                        </label>
+                    </div>
+                    <div class="medium-4 columns end">
+                        <input type="email" id="email" required>
+                        <small class="error">Wpisz poprawny adres e-mail np. imie@nazwisko.pl</small>
+                    </div>
                 </div>
-                <div class="medium-4 columns end">
-                    <input type="email" id="email">
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="medium-3 columns">
-                    <label for="preferences">
-                        <span class="caption">Preferencje</span>
-                    </label>
+                <div class="row">
+                    <div class="medium-3 columns">
+                        <label for="preferences">
+                            <span class="caption">Preferencje</span>
+                        </label>
+                    </div>
+                    <div class="medium-4 columns end">
+                        <select id="preferences">
+                            <option value="default">wybierz</option>
+                            <option>wybierz</option>
+                            <option>wybierz</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="medium-4 columns end">
-                    <select id="preferences">
-                        <option value="default">wybierz</option>
-                    </select>
-                </div>
-            </div>
 
-            <section class="row no-padding">
-                <div class="large-12 columns text-right no-padding">
-                    <div class="button alert">Przejdź do potwierdzenia<span class="fa fa-arrow-right" style="margin-left: 15px;"></span></div>
-                </div>
-            </section>
+                <section class="row no-padding">
+                    <div class="large-12 columns text-right no-padding">
+                        <button type="submit" class="button alert">Przejdź do potwierdzenia<span class="fa fa-arrow-right" style="margin-left: 15px;"></span></button>
+                    </div>
+                </section>
+            </form>
         </div>
 
         <div class="large-3 columns">
@@ -172,8 +177,7 @@
             <section class="row no-margin">
                 <div class="large-12 columns">
                     <h3><span class="header-icon"></span>Pomoc</h3>
-
-                    <ul class="no-bullet" id="sidebarMenu">
+                    <ul class="no-bullet list-menu">
                         <li><a href="#">Czas realizacji</a></li>
                         <li><a href="#">Koszty dostawy</a></li>
                         <li><a href="#">Metody płatności</a></li>
@@ -185,6 +189,88 @@
             </section>
         </div>
     </div>
+
+    <footer>
+        <div class="row">
+            <div class="large-3 medium-6 columns">
+                <h3><span class="header-icon"></span>NEWSLETTER</h3>
+                <span class="caption">Wysyłamy dobre wiadomości</span>
+                <div style="margin-top: 20px">
+                    <input type="text" id="newsletterEmail" placeholder="mój adres e-mail">
+                    <input type="text" id="newsletterName" placeholder="jestem...">
+                </div>
+                <div class="clearfix">
+                    <div class="button-info right">zapisz się <span class="fa fa-arrow-right color-alert" style="margin-left: 5px;"></span></div>
+                </div>
+            </div>
+            <div class="large-3 medium-6 columns">
+                <div>
+                    <div style="float: left; width: 40px; text-align: left; padding-top: 5px;">
+                        <img src="images/tablet.png">
+                    </div>
+                    <div style="margin-left: 40px;">
+                        <h2 class="color-alert no-margin">800 123 45</h2>
+                        <small>w godz  8-20 w dni robocze (połączenie bezpłatne)</small>
+                    </div>
+                </div>
+                <div style="margin-top: 20px">
+                    <div style="float: left; width: 40px; text-align: left; margin-top: -3px">
+                        <img src="images/envelope.png">
+                    </div>
+                    <div style="margin-left: 40px;">
+                        <h2 class="color-alert no-margin">info@supersam.net</h2>
+                        <small>odpowiemy w ciągu 24h</small>
+                    </div>
+                </div>
+            </div>
+            <div class="large-6 columns">
+                <div class="row">
+                    <div class="medium-4 columns">
+                        <h3><span class="header-icon"></span>POMOC</h3>
+                        <ul class="no-bullet list-menu">
+                            <li><a href="#">Czas realizacji</a></li>
+                            <li><a href="#">Koszty dostawy</a></li>
+                            <li><a href="#">Metody płatności</a></li>
+                            <li><a href="#">Reklamacje i zwroty</a></li>
+                            <li><a href="#">Pytania i odpowiedzi</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="medium-4 columns">
+                        <h3><span class="header-icon"></span>MOJE KONTO</h3>
+                        <ul class="no-bullet list-menu">
+                            <li><a href="#">Zmiany w zamówieniu</a></li>
+                            <li><a href="#">Historia zamówień</a></li>
+                            <li><a href="#">Ustawienia</a></li>
+                        </ul>
+                    </div>
+                    <div class="medium-4 columns">
+                        <h3><span class="header-icon"></span>SUPERSAM</h3>
+                        <ul class="no-bullet list-menu">
+                            <li><a href="#">O sklepie</a></li>
+                            <li><a href="#">Regulamin</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-12 columns clearfix no-padding">
+                        <ul class="no-bullet inline-list right" id="socialMenu">
+                            <li><a href="#" id="facebookLink"><span class="fa fa-facebook-square"></span></a></li>
+                            <li><a href="#" id="googleplusLink"><span class="fa fa-google-plus-square" id="googleplusLink"></span></a></li>
+                            <li><a href="#" id="pinterestLink"><span class="fa fa-pinterest-square" id="pinterestLink"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-9 medium-12 large-offset-3 medium-offset-0" style="border-top: 1px solid #2c3136;">
+                <img src="images/allegro.png" class="right" style="margin: 10px 0">
+            </div>
+        </div>
+    </footer>
+
 
 
 

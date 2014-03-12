@@ -9,6 +9,12 @@ var app = (function(document, $) {
 		_init = function() {
 			$(document).foundation();
 			_userAgentInit();
+
+            $('#contactForm input').on('invalid', function() {
+                $(this).addClass('error');
+            }).on('valid', function() {
+                $(this).removeClass('error');
+            });
 		};
 
 	return {

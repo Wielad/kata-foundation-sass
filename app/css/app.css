@@ -4565,8 +4565,8 @@ table {
     margin-top: -5px; } }
 
 meta.foundation-mq-topbar {
-  font-family: "/only screen and (min-width:40.063em)/";
-  width: 40.063em; }
+  font-family: "/only screen and (min-width: 64em)/";
+  width: 64em; }
 
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
@@ -4810,7 +4810,7 @@ meta.foundation-mq-topbar {
 .js-generated {
   display: block; }
 
-@media only screen and (min-width:40.063em) {
+@media only screen and (min-width: 64em) {
   .top-bar {
     background: #333;
     *zoom: 1;
@@ -5046,7 +5046,7 @@ meta.foundation-mq-topbar {
   .xlarge-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:120.063em) and (max-width:99999999em) {
+@media only screen and (min-width:120.063em) and (max-width:999999999999) {
   .xxlarge-only-text-left {
     text-align: left !important; }
   .xxlarge-only-text-right {
@@ -5158,7 +5158,7 @@ meta.foundation-mq-topbar {
   .xlarge-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:120.063em) and (max-width:99999999em) {
+@media only screen and (min-width:120.063em) and (max-width:999999999999) {
   .xxlarge-only-text-left {
     text-align: left !important; }
   .xxlarge-only-text-right {
@@ -5529,7 +5529,7 @@ blockquote, blockquote p {
   .xlarge-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:120.063em) and (max-width:99999999em) {
+@media only screen and (min-width:120.063em) and (max-width:999999999999) {
   .xxlarge-only-text-left {
     text-align: left !important; }
   .xxlarge-only-text-right {
@@ -5998,11 +5998,22 @@ th.hide-for-touch {
   padding-right: 0;
   padding-bottom: 0.0625rem;
   padding-left: 0;
-  /*     @else                            { font-size: $padding - rem-calc(2); } */
-  background-color: #fff;
-  border-color: #cccccc;
-  color: #333; }
-  .button-info:hover, .button-info:focus {
-    background-color: #cccccc; }
-  .button-info:hover, .button-info:focus {
-    color: #333; }
+  /*     @else                            { font-size: $padding - rem-calc(2); } */ }
+
+h1 {
+  font-size: 1.375rem; }
+
+h2 {
+  font-size: 1.25rem; }
+
+h3 {
+  font-size: 1.125rem; }
+
+h4 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 0.875rem; }
+
+h6 {
+  font-size: 1rem; }
